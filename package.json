@@ -1,6 +1,6 @@
 {
   "name": "results-summary-component",
- "homepage": "https://twx0504.github.io/ResultSummaryComponent/",
+  "homepage": "https://twx0504.github.io/ResultSummaryComponent/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,5 +13,8 @@
   },
   "devDependencies": {
     "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
