@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   /* BODY */
   --light-blue: #ecf2ff;
@@ -331,6 +330,9 @@ body {
   border-radius: 30px;
   cursor: pointer;
   transition: 0.2s;
+  /* SOLVE THE TAP HIGHLIGHT ISSUE ON MOBILE WHEN THE BORDER RADIUS IS ROUNDED BUT SHOW RECTANGULAR OUTLINE WHEN TAPPED. */
+  /* NON-STANDARD */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .card .summary .summary-button:hover {
@@ -342,5 +344,5 @@ body {
 
 .card .summary .summary-button:active {
   transform: scale(0.95);
-  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.1); /* Custom active state */
 }
