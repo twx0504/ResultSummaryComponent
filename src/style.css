@@ -335,14 +335,16 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-.card .summary .summary-button:hover {
-  background-image: linear-gradient(
-    var(--light-slate-blue),
-    var(--light-royal-blue)
-  );
+@media not (hover: none) {
+  .card .summary .summary-button:hover {
+    background-image: linear-gradient(
+      var(--light-slate-blue),
+      var(--light-royal-blue)
+    );
+  }
 }
 
 .card .summary .summary-button:active {
   transform: scale(0.95);
-  background-color: rgba(0, 0, 0, 0.1); /* Custom active state */
+  opacity: 0.7;
 }
