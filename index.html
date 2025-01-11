@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <main id="app" class="card">
+      <section class="section result" aria-label="Test result overview">
+        <h2>Your Result</h2>
+
+        <div class="score-indicator" aria-label="Score indicator">
+          <p class="result-score">
+            <span class="result-score-value">76</span>
+            <span class="result-score-total">of 100</span>
+          </p>
+        </div>
+        <div class="description">
+          <p class="comment"><strong>Great</strong></p>
+          <p class="remark">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </section>
+      <section class="section summary" aria-label="Detailed score summary">
+        <div class="summary-wrapper">
+          <h2>Summary</h2>
+          <dl class="summary-card">
+            <div class="summary-item-wrapper">
+              <dt class="summary-item">
+                <img
+                  width="20"
+                  height="20"
+                  src="./src/assets/images/icon-reaction.svg"
+                  alt="A reaction logo."
+                />
+                <h3>Reaction</h3>
+              </dt>
+              <dd><span class="summary-score-value">80</span> / 100</dd>
+            </div>
+            <div class="summary-item-wrapper">
+              <dt class="summary-item">
+                <img
+                  width="20"
+                  height="20"
+                  src="./src/assets/images/icon-memory.svg"
+                  alt="A memory logo."
+                />
+                <h3>Memory</h3>
+              </dt>
+              <dd><span class="summary-score-value">92</span> / 100</dd>
+            </div>
+            <div class="summary-item-wrapper">
+              <dt class="summary-item">
+                <img
+                  width="20"
+                  height="20"
+                  src="./src/assets/images/icon-verbal.svg"
+                  alt="A verbal logo."
+                />
+                <h3>Verbal</h3>
+              </dt>
+              <dd><span class="summary-score-value">61</span> / 100</dd>
+            </div>
+            <div class="summary-item-wrapper">
+              <dt class="summary-item">
+                <img
+                  width="20"
+                  height="20"
+                  src="./src/assets/images/icon-visual.svg"
+                  alt="A visual logo"
+                />
+                <h3>Visual</h3>
+              </dt>
+              <dd><span class="summary-score-value">73</span> / 100</dd>
+            </div>
+          </dl>
+          <button
+            class="summary-button"
+            type="button"
+            aria-label="Continue to next section"
+          >
+            Continue
+          </button>
+        </div>
+      </section>
+
+      <!-- <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </footer> -->
+    </main>
+  </body>
+</html>
